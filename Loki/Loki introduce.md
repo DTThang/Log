@@ -4,7 +4,7 @@
   - [1.2 Grafana](#12)
   - [1.3 Mục đính ra đời](#13)
 - [2. Nguyên tắc cơ bản](#2)
-- [3. Tính năngn](#3)
+- [3. Tính năng](#3)
 - [4. Kiến trúc](#4)
   - [4.1 Thành phần](#41)
   - [4.2 Các chế độ triển khai](#42)
