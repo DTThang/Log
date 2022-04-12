@@ -1,6 +1,6 @@
 # Mục lục
 - [1. Grafana Loki](#1)
-  - [1.1Loki](#11)
+  - [1.1 Loki](#11)
   - [1.2 Grafana](#12)
   - [1.3 Mục đính ra đời](#13)
 - [2. Nguyên tắc cơ bản](#2)
@@ -13,7 +13,7 @@
 - [Tham khảo](#tm)
  
 
-
+---
 
 
 
