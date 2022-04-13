@@ -64,7 +64,7 @@ VM-01 |	Ubuntu 20.04	|enp1s0	|192.168.70.51 |	Ram 2Gb, 2 core
 
 ## 2.3 Install Grafana Loki
 
-- Loki dưới dạng file nhịn phân có thể tải xuống tại [tại đây](https://github.com/grafana/loki/releases/). 
+- Loki dưới dạng file nhị phân có thể tải xuống tại [tại đây](https://github.com/grafana/loki/releases/). 
 - Tại xuống phiên bản cần dùng và lựa chọn kiến trúc cần cài đặt, ở đây tôi dùng phiên bản 2.5.0 và phiển bản dành cho linux amd64
 
       curl -LO https://github.com/grafana/loki/releases/download/v2.5.0/loki-linux-amd64.zip
@@ -141,7 +141,7 @@ WantedBy=multi-user.target
 
 - Truy cập `https://server-IP:3100/metrics` để xem chỉ số của loki 
 ## 2.4 Installing Promtail Agent
-- Promtail dưới dạng file nhịn phân có thể tải xuống tại [tại đây](https://github.com/grafana/loki/releases/). 
+- Promtail dưới dạng file nhị phân có thể tải xuống tại [tại đây](https://github.com/grafana/loki/releases/). 
 - Tại xuống phiên bản cần dùng và lựa chọn kiến trúc cần cài đặt, ở đây tôi dùng phiên bản 2.5.0 và phiển bản dành cho linux amd64
 
       curl -LO https://github.com/grafana/loki/releases/download/v2.5.0/promtail-linux-amd64.zip
