@@ -50,11 +50,11 @@
 
   - **Quy mô theo chiều ngang**: Nó có thể chạy dưới dạng một tệp nhị phân duy nhất cục bộ hoặc cho các hoạt động quy mô nhỏ và có thể dễ dàng mở rộng theo chiều ngang cho các hoạt động quy mô lớn.
 
-  - **Tính nhất quán số đại biểu** : Nó sử dụng tính nhất quán số đại biểu kiểu Dynamo cho các thao tác đọc và ghi để đảm bảo kết quả truy vấn đồng nhất.
+  - **Tính nhất quán số** : Nó sử dụng tính nhất quán số đại biểu kiểu Dynamo cho các thao tác đọc và ghi để đảm bảo kết quả truy vấn đồng nhất.
 
   - **Hỗ trợ nhiều người thuê**: Nó hỗ trợ nhiều người thuê thông qua ID người thuê để dữ liệu của người thuê được lưu trữ riêng biệt.
 
-  - **Hỗ trợ Grafana bản địa**: Nó có hỗ trợ bản địa trong Grafana (cần Grafana v6.0).
+  - **Hỗ trợ Grafana**: Nó có hỗ trợ trong Grafana (cần Grafana v6.0).
 
 
 ### Một stack ghi log dựa trên Loki có 3 thành phần chính
@@ -202,7 +202,7 @@ tìm nạp nhật ký cả từ ingesters và từ bộ lưu trữ dài hạn.
 #  Tham Khảo
 - https://grafana.com/docs/loki/latest/fundamentals/architecture/deployment-modes/
 - https://www.atatus.com/blog/a-beginners-guide-for-grafana-loki/
-
+- https://helpex.vn/article/dang-nhap-kubernetes-voi-loki-va-plg-stack-608d22f12a29e6457961dab6
 
 
 
