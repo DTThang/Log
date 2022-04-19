@@ -250,27 +250,45 @@ Nhập thông tin đăng nhập sau đó thay đổi passwork mới
   ![image](image/Screenshot_17.png) 
 
 ### Cấu hình nhận log từ client 
-- Tại VM-01 cài đặt [loki](#23-install-grafana-loki)
 
-- Tại VM-01 cài đặt [Promtail service](#24-installing-promtail-agent)
+- Tại VM-01 cài đặt [Promtail](#24-installing-promtail-agent)
 
-- Chọn  Configuration -> Data Sources -> Add data source.
-  ![image](image/Screenshot_18.png)
+- Sửa file cấu hình /etc/promtail/config.yaml để log có thể gửi về loki 
+```
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
 
-- Chọn Loki 
-  ![image](image/Screenshot_14.png)
+positions:
+  filename: /data/promtail/positions.yaml
 
-- Điền thông tin
-  - Name: tên của instance
-  - URL: địa chỉ client cần thu log và port sử dụng 
-  ![image](image/Screenshot_19.png)
+clients:
+  - url: http://192.168.70.50:3100/loki/api/v1/push
 
-  - Chọn  Save & test
+scrape_configs:
+- job_name: docker
+  static_configs:
+  - targets:
+      - 192.168.70.51
+    labels:
+      job: varlogs
+      host: 192.168.70.51
+      __path__: /var/log/*log
 
- - Chọn  Explore -> Log browers -> chọn lable -> Show logs để xem log  
+- job_name: syslog
+  static_configs:
+  - targets:
+      - 192.168.70.51
+    labels:
+      job: varlogs
+      host: 192.168.70.51
+      __path__: /var/log/*log
 
-  ![image](image/Screenshot_20.png) 
-  ![image](image/Screenshot_21.png) 
+```
+- Chọn  Explore -> Log browers -> chọn lable -> Show logs để xem log  
+  ![image](image/Screenshot_14.png) 
+  ![image](image/Screenshot_19.png) 
+
 
 
 
